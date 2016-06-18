@@ -1,0 +1,6 @@
+#! /bin/bash
+sudo pkill uv4l
+sleep 5
+uv4l --driver raspicam --video_nr 0
+sleep 5
+motion -c /var/www/config/mymotion.conf
